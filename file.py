@@ -14,4 +14,5 @@ for i in range(10):
         else:
             print("The answer is lower")
 
-print("Attempts used: " + str(i))
+
+print("Attempts used: " + str(i + 1))
