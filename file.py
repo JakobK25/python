@@ -1,8 +1,6 @@
 import random
 
 answerInt = random.randint(1, 10)
-print(answerInt)
-
 guessInt = int(input("Guess a number between 1 and 10: "))
 
 for i in range(10):
@@ -15,3 +13,5 @@ for i in range(10):
             print("The answer is higher")
         else:
             print("The answer is lower")
+
+print("Attempts used: " + str(i))
