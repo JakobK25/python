@@ -1,4 +1,8 @@
 import pygame
+import random
+
+
+
 
 pygame.init()
 
@@ -13,8 +17,11 @@ run = True
 while run: 
 
     for i in range(10):
-        pygame.draw.circle(screen, (i * 20, i * 10, 0), (400, 300), 50 * i, 5)
+        red = random.randint(0, 255)
+        green = random.randint(0, 255)
+        blue = random.randint(0, 255)
 
+        pygame.draw.rect(screen, (red, green, blue), (100 * i + 50, 50, 50, 50))
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             run = False
