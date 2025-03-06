@@ -23,7 +23,7 @@ while run:
     x = random.randint(0, SCREEN_WIDTH)
     y = random.randint(0, SCREEN_HEIGHT)
 
-    radius = random.randint(1, 3)
+    radius = random.randint(10, 50)
 
     pygame.draw.circle(screen, (red, green, blue), (x, y), radius)
     
