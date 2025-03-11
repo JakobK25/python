@@ -1,6 +1,5 @@
 import pygame
 import random
-from playsound import playsound
 
 sound = 'click.mp3'
 
@@ -29,7 +28,6 @@ while run:
     pygame.draw.circle(screen, (r, g, b), [x,y], 30)
     
     if x+30 > 800 or x-30 < 0:
-        playsound(sound)
         speedX = -speedX
         r = random.randint(0, 255)
         g = random.randint(0, 255)
