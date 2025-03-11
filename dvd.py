@@ -38,7 +38,6 @@ while run:
     x = x + speedX
 
     if y+30 > 600 or y-30 < 0:
-        playsound(sound)
         speedY = -speedY
         r = random.randint(0, 255)
         g = random.randint(0, 255)
